@@ -32,6 +32,8 @@ echo Starting installation
 choco version >nul 2>&1 && (
     echo Chocolatey detected! Using chocolatey to install: TeXLive Basic, LyX
     choco install texlive
+    rem refreshenv
+    eval $(powershell -NonInteractive -Command 'write("export PATH=`"" + ([Environment]::GetEnvironmentVariable("PATH","Machine") + ";" + [Environment]::GetEnvironmentVariable("PATH","User")).replace("\","/").replace("C:","/c").replace(";",":") + ":`$PATH`"")')
     tlmgr install babel-hebrew
     mktexlsr
     updmap-sys
@@ -55,6 +57,9 @@ choco version >nul 2>&1 && (
         echo Starting installation
         .\installtexlive.exe -no-gui -scheme basic
         echo TeXLive installed
+        
+        rem refreshenv
+        eval $(powershell -NonInteractive -Command 'write("export PATH=`"" + ([Environment]::GetEnvironmentVariable("PATH","Machine") + ";" + [Environment]::GetEnvironmentVariable("PATH","User")).replace("\","/").replace("C:","/c").replace(";",":") + ":`$PATH`"")')
         
         call installCulmusLaTeX
 
