@@ -1,0 +1,92 @@
+# LyX 2.3.5.2 generated this file. If you want to make your own
+# modifications you should do them from inside LyX and save.
+
+Format 24
+
+
+#
+# MISC SECTION ######################################
+#
+
+\kbmap true
+\kbmap_primary "null"
+\kbmap_secondary "hebrew"
+
+#
+# SCREEN & FONTS SECTION ############################
+#
+
+#
+# COLOR SECTION ###################################
+#
+
+#
+# PRINTER SECTION ###################################
+#
+
+
+#
+# TEX SECTION #######################################
+#
+
+
+#
+# FILE SECTION ######################################
+#
+
+
+#
+# PLAIN TEXT EXPORT SECTION ##############################
+#
+
+
+#
+# SPELLCHECKER SECTION ##############################
+#
+
+\use_system_colors false
+
+#
+# LANGUAGE SUPPORT SECTION ##########################
+#
+
+
+#
+# 2nd MISC SUPPORT SECTION ##########################
+#
+
+
+#
+# FORMATS SECTION ##########################
+#
+
+\format "bibtex" "bib" "BibTeX" "" "" "auto" "" "text/x-bibtex"
+\format "dia" "dia" "DIA" "" "auto" "auto" "vector,zipped=native" "application/x-dia-diagram"
+\format "docbook-xml" "xml" "DocBook (XML)" "" "" "xed" "document,menu=export" "application/docbook+xml"
+\format "fen" "fen" "FEN" "" "auto" "auto" "" ""
+\format "fig" "fig" "FIG" "" "auto" "auto" "vector" "application/x-xfig"
+\format "gnumeric" "gnumeric" "Gnumeric spreadsheet" "" "" "auto" "document" "application/x-gnumeric"
+\format "agr" "agr" "Grace" "" "auto" "auto" "vector" ""
+\format "dot" "dot" "Graphviz Dot" "" "" "xed" "vector" "text/vnd.graphviz"
+\format "noteedit" "not" "Noteedit" "" "auto" "auto" "vector" ""
+\format "text" "txt" "Plain text" "a" "" "xed" "document,menu=export" "text/plain"
+\format "text4" "txt" "Plain text (catdvi)" "" "" "xed" "document" ""
+\format "text3" "txt" "Plain text (ps2ascii)" "" "" "xed" "document" ""
+\format "text2" "txt" "Plain text (pstotext)" "" "" "xed" "document" ""
+\format "textparagraph" "txt" "Plain Text, Join Lines" "" "" "xed" "document" ""
+\format "r" "R" "R/S code" "" "" "xed" "document,menu=export" ""
+\format "xpm" "xpm" "XPM" "" "auto" "auto" "" "image/x-xpixmap"
+\default_otf_view_format pdf5
+
+#
+# CONVERTERS SECTION ##########################
+#
+
+\converter "lyxpreview" "png" "python -tt $$s/scripts/lyxpreview2bitmap.py --png " ""
+\converter "lyxpreview" "ppm" "python -tt $$s/scripts/lyxpreview2bitmap.py --ppm=" ""
+\converter "latex" "rtf" "" ""
+
+#
+# COPIERS SECTION ##########################
+#
+
